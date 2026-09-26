@@ -18,13 +18,22 @@
         <div class="avatar">💻</div>
         <h1>Садретдинов Камиль</h1>
         <p class="subtitle">Студент технаря & Начинающий разработчик</p>
-        <div class="specs">
-            <h3>Мой ПК:</h3>
-            <ul>
-                <li><strong>Процессор:</strong> AMD Ryzen 5 5500</li>
-                <li><strong>Видеокарта:</strong> Radeon RX 5700 XT</li>
-            </ul>
-        </div>
+        <!-- НАЧАЛО БЛОКА ИГРЫ -->
+<div class="game-score">
+    Баланс: <span id="balance">0</span> ₽
+    <div class="income-info">Клик: +<span id="click-power">1</span>₽ | Пассив: +<span id="passive-income">0</span>₽/с</div>
+</div>
+<div class="specs">
+    <h3>Мой ПК (Уровень <span id="pc-level">1</span>):</h3>
+    <ul>
+        <li><strong>Процессор:</strong> <span id="cpu-name">AMD Athlon (Слабый)</span></li>
+        <li><strong>Видеокарта:</strong> <span id="gpu-name">Встроенная графика</span></li>
+    </ul>
+    <!-- Кнопка прокачки -->
+    <button id="upgrade-btn" class="upgrade-btn">
+        <i class="fa-solid fa-arrow-up"></i> Апгрейд ПК (Цена: <span id="upgrade-cost">10</span> ₽)
+    </button>
+</div>
         <div class="links">
             <a href="https://t.me/rocsaq" target="_blank" class="btn">✈️ 
                 <i class="fa-brands fa-telegram"></i> Telegram
